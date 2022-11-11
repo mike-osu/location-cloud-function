@@ -13,12 +13,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-function-web</artifactId>
-            <version>3.2.7</version>
-        </dependency>
-
         <!-- Google Maps Services -->
         <dependency>
             <groupId>com.google.maps</groupId>
@@ -40,6 +34,7 @@
     </dependencies>
 
     <build>
+        <finalName>capstone-location</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
