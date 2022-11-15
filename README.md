@@ -13,3 +13,6 @@ Will be used by [backend application](https://github.com/mike-osu/capstone-api) 
 - [ ] Send coordinates to [SQS queue](https://aws.amazon.com/sqs/)
 - [ ] Enable SQS listener in backend
 - [ ] Update coordinates in [PostgreSQL](https://www.postgresql.org/) database
+
+---
+<img src="capstone.png">
