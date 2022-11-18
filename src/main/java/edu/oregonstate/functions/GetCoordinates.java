@@ -28,6 +28,7 @@ public class GetCoordinates implements RequestHandler<Input, Coordinates> {
     @Override
     public Coordinates handleRequest(Input input, Context context) {
 
+        System.out.println(input.getAddress());
         GeoApiContext geoApiContext = new GeoApiContext.Builder()
                 .apiKey(System.getenv("google_maps_apikey"))
                 .build();
@@ -50,6 +51,7 @@ public class GetCoordinates implements RequestHandler<Input, Coordinates> {
             e.printStackTrace();
         }
 
+        System.out.println(msgPayload);
         SendMessageRequest sendMsgRequest = new SendMessageRequest()
                 .withQueueUrl(QUEUE_URL)
                 .withMessageBody(msgPayload)
